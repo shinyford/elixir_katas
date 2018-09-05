@@ -1,6 +1,5 @@
 defmodule BinaryTreeTest do
   use ExUnit.Case
-  doctest BinaryTree
 
   test "should return an array with a single entry" do
     tree = %TreeNode{value: 9}
@@ -36,6 +35,9 @@ defmodule BinaryTreeTest do
   end
 
   test "should return [1,2,3,4,5,6,7,8,9,10] for a more complicated tree" do
+    # non-driving test (i.e. should pass without additional code, so it's
+    # not driving the design, it's more about confirmation that code driven by
+    # more simple tests still works for the more complex.)
     #            1
     #       2        3
     #         4     5 6

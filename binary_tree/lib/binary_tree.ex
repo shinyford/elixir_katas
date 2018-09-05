@@ -1,11 +1,4 @@
 defmodule BinaryTree do
-  @moduledoc """
-  Documentation for BinaryTreeSort.
-  """
-
-  @doc """
-  Sort nodes
-  """
   def sort(%TreeNode{} = node) do
     node
     |> create_depth_pairs()
